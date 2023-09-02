@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/Login_Page.css">
+</head>
+<body background="static/image/Login.jpg">
+    <div class="container">
+        <div class="head">
+		    <h2>Login Page</h2>
+        </div>
+		<form method="post" action="/login">
+            <div class="email">
+                <h3>Enter Login Details</h3>
+                <table style="font-size:15px;">
+                    <tr><td><b>Email</b></td>
+                    <td><input type="text" placeholder="Enter Email" name="email" id="email" required></td></tr>
+                    <tr><td><b>Password:</b></td>
+                    <td><input type="password" placeholder="Enter Password" name="pass" id="pass" required></td></tr>
+                </table>
+            </div>
+            
+		<button type="submit">Login</button>
+        </form>
+        <p style="font-style:aria-busy; ">Don't Have An Account: <br><a href={{url_for('sign_up_page')}}>Sign Up Here</a></p>
+    </div>
+</body></html>
+
